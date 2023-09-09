@@ -4,13 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Ahindra-HNGx-one</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main class="container">
+    <section class="container">
+        <section class="card">
+            <header class="picture">
+                <div class="transperant-layer"></div>
+                <img class="display-pic" data-testid="slackDisplayImage"
+                    src="https://ca.slack-edge.com/T05FFAA91JP-U05R2TR23FG-dfc8f37cb13b-512" alt="Ahindra D.">
+                <img class="preview" src="./images/icon-view.svg" alt="">
+            </header>
 
-    </main>
+            <main class="desc">
+                <div class="start">
+                    <p class="name" data-testid="slackUserName">Ahindra D.</p>
+                    <div class="track">
+                        <img src="./images/icon-ethereum.svg" alt="">
+                        <p class="track-name" data-testid="myTrack">Frontend Track</p>
+                    </div>
+                </div>
+
+                <p class="summ">Full-Stack Web Developer @ HNGx</p>
+
+                <div class="data">
+                    <div class="date">
+                        <p class="weekday" data-testid="currentDayOfTheWeek">SUNDAY</p>
+                    </div>
+
+                    <div class="time">
+                        <img src="./images/icon-clock.svg" alt="">
+                        <p class="utc" data-testid="currentUTCTime">UTC: 1694218739333</p>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="creator">
+                <img src="./images/github.png" alt="" class="github-logo">
+                <a class="github-repo" data-testid="githubURL" href="https://github.com/AhindraD/hngx-one-profile"
+                    target="_blank"><span class="click">Github Repo</span>
+            </footer>
+        </section>
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

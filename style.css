@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+    min-height: 500px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 5px 5px 45px 0px rgba(0, 0, 0, 0.331);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 75px 5px hsl(178, 100%, 50%);
+}
+
+.picture {
+    width: 260px;
+    height: 260px;
+    border-radius: 9px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.display-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.transperant-layer {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.388);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.preview {
+    height: 40px;
+    object-fit: cover;
+    position: absolute;
+    right: 110px;
+    bottom: 110px;
+    z-index: -1;
+}
+
+.picture:hover .preview,
+.picture:hover .transperant-layer {
+    z-index: 1;
+}
+
+.desc {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.start {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.summ {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    width: 260px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.data img,
+.track img {
+    height: 17px;
+    object-fit: cover;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3px;
+    width: fit-content;
+}
+
+.utc {
+    width: 145px;
+    text-overflow: hidden;
+}
+
+.creator {
+    /* border: 1px solid hsl(215, 32%, 27%); */
+    width: 100%;
+    align-self: start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+}
+
+.github-logo {
+    height: 30px;
+    border: 2px solid hsla(178, 100%, 50%, 0.317);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.click {
+    color: rgba(255, 255, 255, 0.847);
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.click:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+a {
+    text-decoration: none;
+}
